@@ -1,0 +1,246 @@
+section,
+.tm-sidebar,
+.tm-content-header {
+    box-shadow: 0 0 10px rgba(61, 55, 61, 0.7);
+}
+
+section.heading::before,
+.blocks::before,
+#ideas::before,
+section.tm-content-box::before,
+.tm-team-img::before {
+    content: '';
+    position: absolute;
+    border: 23px solid transparent;
+    border-left: 23px solid lightskyblue;
+    border-top: 23px solid lightskyblue;
+}
+
+.box-bg:hover,
+.tm-nav-item:hover {
+    background-color: lightskyblue;
+}
+
+.tm-section-title-box:hover,
+.tm-nav-item-link:hover {
+    color: #fff;
+}
+
+.tm-banner {
+    background: linear-gradient(burlywood, lightskyblue);
+}
+
+.tm-banner-inner {
+    background: white;
+}
+
+@keyframes bantext {
+    from {
+        transform: rotate(45deg);
+    }
+
+    to {
+        transform: rotate(0deg);
+    }
+}
+
+.tm-banner-text {
+    text-shadow: 0px 3px 0px #76cdd7,
+        0px 3px 10px #76cdd7,
+        0px 13px 2px #76cdd7,
+        0px 23px 30px rgba(0, 0, 0, 0.1);
+    letter-spacing: 4px;
+    word-spacing: 14px;
+    animation-name: bantext;
+    animation-duration: 4s;
+}
+
+.flex-2-col {
+    display: flex;
+    align-items: center;
+}
+
+.tm-section-title {
+    text-align: center;
+}
+
+.tm-section-description {
+    text-align: left;
+    text-indent: 20px;
+    font-style: italic;
+}
+
+.tm-team-description-container {
+    order: 2;
+}
+
+div.padding-medium h2 {
+    margin-left: auto;
+    margin-right: auto;
+    color: lightskyblue;
+    text-align: center;
+}
+
+div.padding-medium ol {
+    list-style-type: decimal-leading-zero;
+}
+
+div.padding-medium ol li a.text::after {
+    content: "New";
+    color: red;
+    vertical-align: super;
+    font-size: 10px;
+    font-weight: bold;
+}
+
+div.padding-medium ol li:hover::before,
+div.padding-medium ol li a:hover {
+    content: ">";
+    color: red;
+    font-weight: bold;
+}
+
+div.padding-medium ol li{
+    max-width: 200px;
+}
+
+.blocks {
+    background-color: #F0F0F0;
+}
+
+.box-work {
+    border: 10px solid white;
+}
+
+.box-work:nth-child(2n) {
+    background-color: lightskyblue;
+    border: 10px solid lightskyblue;
+    color: #fff;
+}
+
+.box-work p::first-letter,
+.tm-section-title-box:hover {
+    font-weight: bold;
+}
+
+.box-work p {
+    font-style: italic;
+}
+
+#ideas {
+    display: flexbox;
+
+}
+
+#contact .tm-section-title { 
+    text-align: right;
+}
+
+#contact .form-group input {
+    border-top-style: none;
+    border-left-style: none;
+    border-right-style: none;
+    border-bottom-color: lightskyblue;
+}
+
+#contact .form-group .form-control:focus {
+    background-color: #76CDD7;
+}
+
+.submit-btn {
+    float: right;
+    background-color: white;
+    color: lightskyblue;
+    border-radius: 0;
+    border-color: lightskyblue;
+}
+
+.submit-btn:hover {
+    border-color: #20B2AA;
+    background-color: #20B2AA;
+    color: white;
+}
+
+#contact_subject {
+    background: right/30px url(./../img/email-icon.png) no-repeat;
+}
+
+
+
+@media print {
+
+    .tm-sidebar,
+    #about,
+    .blocks .tm-content-box,
+    .img-contact-us,
+    .tm-team-img,
+    section.heading::before,
+    .blocks::before,
+    #ideas::before,
+    section.tm-content-box::before,
+    .tm-team-img::before,
+    #contact,
+    .carousel-indicators {
+        display: none;
+    }
+    .tm-section-description {
+        text-align: center;
+    }
+    .tm-team-description-container,
+    .flex-2-col {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        max-width: 650px;
+        margin-top: 0;
+        margin-bottom: 0;
+        padding: 0;
+    }
+    .tm-banner,
+    .tm-main-content {
+        margin: 0;
+        padding: 0;
+    }
+    .tm-banner-text {
+        transform: rotate(0deg);
+    }
+    .tm-section-title, .padding-medium h2 {
+        text-transform: uppercase;
+        font-weight: lighter;
+    }
+    .tm-content-box,
+    footer {
+        padding: 0;
+        margin: 0;
+    }
+    .padding-medium {
+        padding: 0;
+        margin: 0;
+    }
+    div.padding-medium ol li a.text::after {
+        display: none;
+    }
+    div.padding-medium ol {
+        list-style-type: none;
+    }
+    div.padding-medium ol li:nth-child(2n+1) {
+        max-width: 1100px;
+        text-align: center;
+        padding-right: 270px;
+        padding-left: auto;
+    }
+    div.padding-medium ol li:nth-child(2n) {
+        max-width: 1100px;
+        text-align: center;
+        padding-right: auto;
+        padding-left: 170px;
+    }
+    .flex-item {
+        margin-bottom: 20px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .carousel-description {
+        max-width: 625px;
+    }
+}
