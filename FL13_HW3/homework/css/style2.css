@@ -1,0 +1,70 @@
+body {
+  margin: 0; }
+
+.header {
+  background: url("./../img/m-h-night.jpg");
+  background-repeat: no-repeat;
+  background-position-y: -150px;
+  background-position-x: -10px;
+  height: 800px;
+  border-radius: 0 0 40% 0 / 30%;
+  max-height: 760px;
+  padding-left: 150px; }
+  .header .landing-logo {
+    display: flex; }
+    .header .landing-logo img {
+      padding-top: 20px;
+      height: 100%; }
+    .header .landing-logo p {
+      font-family: 'Hind', sans-serif;
+      font-weight: bold;
+      font-size: x-large;
+      color: rgba(0, 0, 0, 0.65);
+      margin-top: 15px;
+      padding-left: 15px;
+      display: flex;
+      flex-direction: column; }
+      .header .landing-logo p span {
+        font-weight: normal;
+        font-size: x-small;
+        color: black;
+        line-height: 3px;
+        margin-left: 10px; }
+  .header .header_heading {
+    font-family: 'Source Sans Pro', sans-serif;
+    font-weight: bold;
+    font-size: 75px;
+    opacity: 0.65;
+    line-height: 75px;
+    width: 550px;
+    position: relative;
+    margin-bottom: 35px; }
+  .header .header_heading::after {
+    content: '';
+    background-color: #14A0C7;
+    filter: brightness(115%);
+    position: absolute;
+    width: 315px;
+    height: 50px;
+    right: 235px;
+    top: 95px;
+    z-index: -1; }
+  .header .header_text {
+    white-space: pre-line;
+    font-family: 'Hind', sans-serif;
+    font-size: 17px;
+    opacity: 0.65;
+    width: 825px; }
+  .header .header_button {
+    background-color: #699900;
+    color: white;
+    font-size: larger;
+    margin-top: 50px;
+    width: 150px;
+    height: 45px;
+    border: none; }
+  .header a.login {
+    color: white;
+    font-size: larger;
+    font-family: 'Source Sans Pro', sans-serif;
+    margin-left: 170px; }

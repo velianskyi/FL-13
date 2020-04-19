@@ -100,7 +100,7 @@ div.padding-medium ol li a:hover {
     font-weight: bold;
 }
 
-div.padding-medium ol li{
+div.padding-medium ol li {
     max-width: 200px;
 }
 
@@ -127,12 +127,7 @@ div.padding-medium ol li{
     font-style: italic;
 }
 
-#ideas {
-    display: flexbox;
-
-}
-
-#contact .tm-section-title { 
+#contact .tm-section-title {
     text-align: right;
 }
 
@@ -162,7 +157,7 @@ div.padding-medium ol li{
 }
 
 #contact_subject {
-    background: right/30px url(./../img/email-icon.png) no-repeat;
+    background: right/30px url(./img/email-icon.png) no-repeat;
 }
 
 
@@ -183,9 +178,11 @@ div.padding-medium ol li{
     .carousel-indicators {
         display: none;
     }
+
     .tm-section-description {
         text-align: center;
     }
+
     .tm-team-description-container,
     .flex-2-col {
         display: block;
@@ -196,50 +193,61 @@ div.padding-medium ol li{
         margin-bottom: 0;
         padding: 0;
     }
+
     .tm-banner,
     .tm-main-content {
         margin: 0;
         padding: 0;
     }
+
     .tm-banner-text {
         transform: rotate(0deg);
+        animation: none;
     }
-    .tm-section-title, .padding-medium h2 {
+
+    .tm-section-title,
+    .padding-medium h2 {
         text-transform: uppercase;
         font-weight: lighter;
     }
+
     .tm-content-box,
     footer {
         padding: 0;
         margin: 0;
     }
+
     .padding-medium {
         padding: 0;
         margin: 0;
     }
+
     div.padding-medium ol li a.text::after {
         display: none;
     }
+
     div.padding-medium ol {
         list-style-type: none;
     }
+
     div.padding-medium ol li:nth-child(2n+1) {
         max-width: 1100px;
         text-align: center;
         padding-right: 270px;
-        padding-left: auto;
     }
+
     div.padding-medium ol li:nth-child(2n) {
         max-width: 1100px;
         text-align: center;
-        padding-right: auto;
         padding-left: 170px;
     }
+
     .flex-item {
         margin-bottom: 20px;
         margin-left: auto;
         margin-right: auto;
     }
+
     .carousel-description {
         max-width: 625px;
     }
