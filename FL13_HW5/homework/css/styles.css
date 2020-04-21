@@ -1,16 +1,3 @@
-/*
- * Feel free to change name of colors if you need it
- * Feel free to add new colors if you need it
- */
-
-:root {
-  --bg-color--dark: #0b192f;
-  --bg-color--medium: #162b4d;
-  --text--color: #484848;
-  --link: #fff;
-  --link--hover: #b8b8b8;
-}
-
 body {
   font-family: roboto;
 }
@@ -31,7 +18,6 @@ body {
   background: #DAAD86;
 }
 
-/* Your styles go here */
 body {
   background-color: #0B192F;
 }
@@ -414,7 +400,7 @@ footer {
   .p4 img:hover {
     opacity: 0.5;
   }
-  
+
   .s-content:hover {
     color: rgba(0, 0, 0, 0.5);
   }
