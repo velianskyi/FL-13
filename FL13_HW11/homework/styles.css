@@ -1,0 +1,51 @@
+/* TODO: your styles goes here*/
+#root {
+    width: 350px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.5);
+    padding: 5px;
+}
+li, input {
+    list-style: none;
+    cursor: pointer;
+}
+li i.folder {
+    color: #EDBC0B;
+}
+li i.file {
+    color: #B0B0B0;
+}
+li span {
+    display: flex;
+}
+li span.text {
+    margin-top: auto;
+    margin-bottom: auto;
+}
+ul.emp {
+    padding-left: 0;
+}
+ul.emp li {
+    cursor: text;
+}
+span.filedescr:hover, span.foldescr:hover, #menu li#rename:hover,#menu li#delete:hover {
+    background-color: #E3E3E3;
+}
+#menu li#ren:hover,#menu li#del:hover {
+    background-color: inherit;
+}
+#menu {
+    border-radius: 1px;
+    background-color: #F7F7F7;
+    margin: 0;
+    width: 80px;
+    padding: 10px;
+    display: none;
+    position: fixed;
+    box-shadow: 2px 3px 4px -1px rgba(0,0,0,0.5);
+}
+input {
+    border: none;
+    background-color: inherit;
+    color: black;
+}
