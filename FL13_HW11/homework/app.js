@@ -153,7 +153,7 @@ rootNode.addEventListener('contextmenu', event => {
         let ts = 27;
         if(e.keyCode === tt || e.keyCode === ts) {
           ren.disabled = true;
-          var sel = window.getSelection ? window.getSelection() : document.selection;
+          let sel = window.getSelection ? window.getSelection() : document.selection;
           if (sel) {
             if (sel.removeAllRanges) {
               sel.removeAllRanges();
