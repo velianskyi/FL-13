@@ -1,0 +1,149 @@
+body {
+    margin: 0;
+    background-color: #E1E1E1;
+}
+
+#root {
+    margin: 20px;
+    background-color: #fff;
+    display: flex;
+}
+
+#left, #right {
+    width: 50%;
+    border-right: 1px solid #E1E1E1;
+    padding: 10px 10px 10px 10px;
+}
+
+h2 {
+    color: lightskyblue;
+    margin: 0;
+    font-size: 40px;
+}
+
+#bk_list {
+    width: 100%;
+}
+
+.bk_name {
+    font-size: 20px;
+    margin: 0 0 0 20px;
+}
+
+.bk_name:hover {
+    font-weight: bold;
+
+}
+
+#nai {
+    display: flex;
+    margin-bottom: 10px;
+}
+
+#nai span h3{
+    font-size: 20px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+#nai span {
+    margin-left: 20px;
+    margin-right: 60px;
+    width: 65%;
+    text-align: left;
+}
+
+#nai #bk_plot {
+    margin-left: 10px;
+    letter-spacing: 0.5px;
+}
+
+#nai #bk_author {
+    font-weight: 600;
+}
+
+#bk_img {
+    max-width: 150px;
+    width: auto;
+    height: auto;
+    margin-right: 30px;
+}
+
+
+.bk_edit, #bk_add, #add_book, #save_book, #cancel_book {
+    padding: 10px;
+    font-weight: bold;
+}
+
+.bk_edit {
+    background-color: #fff;
+    border: 1px solid black;
+    width: 100px;
+    float: right;
+}
+
+.bk_edit:hover {
+    background-color: #E1E1E1;
+}
+
+#bk_add, #add_book, #save_book, #cancel_book {
+    background-color: lightskyblue;
+    color: #fff;
+    border: none;
+}
+
+#bk_add:hover, #add_book:hover, #save_book:hover, #cancel_book:hover {
+    background-color: #186a9e;
+}
+
+.bk_name, .bk_edit, #bk_add, #add_book, #save_book, #cancel_book {
+    cursor: pointer;
+    outline: none;
+}
+
+#edit_form, #add_form {
+    margin-left: 20px;
+}
+
+#edit_form p label, #add_form p label {
+    font-weight: bold;
+    font-size: 17px;
+    letter-spacing: 0.5px;
+    margin-bottom: 10px;
+}
+
+#edit_form p input, #add_form p input {
+    border: 1px solid black;
+    font-size: 14px;
+    padding: 3px;
+    height: 20px;
+}
+
+#edit_form p input:focus, #add_form p input:focus {
+    border: 1px solid lightblue;
+}
+
+#edit_form p, #add_form p {
+    display: flex;
+    flex-direction: column;
+}
+
+#edit_form p:last-child, #add_form p:last-child {
+    flex-direction: row;
+}
+
+#add_book, #save_book, #cancel_book {
+    width: 100px;
+} 
+
+#add_book, #save_book {
+    margin-right: 20px;
+}
+
+#add_book, #save_book {
+    margin-left: auto;
+}
+
+#cancel_book {
+    margin-right: auto;
+}
