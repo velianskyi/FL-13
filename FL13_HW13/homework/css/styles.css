@@ -1,0 +1,90 @@
+.navbar-brand {
+    font-size: 30px;
+    font-weight: 600;
+    font-family: Arial, Helvetica, sans-serif;
+    font-stretch: semi-condensed;
+}
+
+.nav-link {
+    font-weight: 500;
+}
+
+.hero-info {
+    margin-top: 6rem;
+}
+
+.hero__title {
+    font-size: 12vw;
+    font-weight: 400;
+}
+
+.hero__description {
+    margin-top: 30px;
+    font-size: 20px;
+}
+
+.hero__image {
+    width: 60%;
+}
+
+.hero__button,
+.subscribe__button {
+    background-color: #FF7F50;
+}
+
+.card-section__title p {
+    font-size: 20px;
+}
+
+.subscribe__text,
+.subscribe__input-group {
+    margin-top: 40px;
+}
+
+.subscribe__text p {
+    font-size: 16px;
+}
+
+.subscribe__input-group input {
+    margin-bottom: 10px;
+}
+
+@media screen and (max-width: 768px) {
+    .hero {
+        flex-direction: column-reverse;
+    }
+
+    .hero-info {
+        margin-top: 0;
+    }
+
+    .hero__description {
+        font-size: 33px;
+    }
+
+    .hero__image {
+        width: 100%;
+    }
+
+    .subscribe__text p {
+        font-size: 23px;
+    }
+
+    .subscribe__input-group {
+        margin-top: 0;
+    }
+
+    .navbar-brand {
+        font-size: 45px;
+    }
+}
+
+@media screen and (min-width: 769px) {
+    .hero {
+        flex-direction: row;
+    }
+
+    .hero__title {
+        font-size: 3.5vw;
+    }
+}
