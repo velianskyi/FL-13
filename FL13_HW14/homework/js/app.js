@@ -30,11 +30,8 @@ function FrontendLab(students, failedLimit) {
     }
     this.addHomeworkResults = function(homeworkResult) {
         for (let i = 0; i < _studentsList.length; i++) {
-            for (let j = 0; j < homeworkResult.results.length; j++) {
-                if (_studentsList[i].getEmail() === homeworkResult.results[j].email) {
-                    _studentsList[i].addHomeworkResult(homeworkResult.topic, homeworkResult.results[j].success);
-                }
-            }
+            let result = homeworkResult.results.find(item => _studentsList[i].getEmail() === item.email).success;
+            _studentsList[i].addHomeworkResult(homeworkResult.topic, result);
         }
     }
     this.printStudentsEligibleForTest = function() {
