@@ -9,6 +9,7 @@ function Vehicle(color, engine) {
     this.maxSpeed = 70;
     this.model = 'unknown model';
     this.currentSpeed = 0;
+    this.mcSpeed = 0;
     this.driveStatus = false;
     this.stopping = 0;
     this.stopMSG = ``;
@@ -74,13 +75,13 @@ Vehicle.prototype.drive = function() {
 
 Vehicle.prototype.stop = function() {
     if (this.driveStatus) {
-        this.mcSpeed = this.currentSpeed;
+        this.mcSpeed = this.currentSpeed > this.mcSpeed ? this.currentSpeed : this.mcSpeed;
         switch (this.constructor.name) {
             case 'Vehicle':
-                this.stopMSG = `Vehicle is stopped. Maximum speed during the drive was ${this.currentSpeed}`;
+                this.stopMSG = `Vehicle is stopped. Maximum speed during the drive was ${this.mcSpeed}`;
                 break;          
             case 'Car':
-                this.stopMSG = `Car ${this.model} is stopped. Maximum speed during the drive was ${this.currentSpeed}`;
+                this.stopMSG = `Car ${this.model} is stopped. Maximum speed during the drive was ${this.mcSpeed}`;
                 break;
             case 'Motorcycle':
                 this.stopMSG = `Motorcycle ${this.model} is stopped. Good drive`;
@@ -97,6 +98,7 @@ Vehicle.prototype.stop = function() {
             let stopID = setInterval(() => {
                 if (this.currentSpeed <= 0) {
                     this.currentSpeed = 0;
+                    this.mcSpeed = 0;
                     this.stopping = 0;
                     this.braking = false;
                     console.log(this.stopMSG);  
