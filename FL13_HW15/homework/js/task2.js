@@ -38,9 +38,19 @@ Vehicle.prototype.drive = function() {
                 clearInterval(driveID);
                 return;
             }
+            if(this.driveStatus) {
+                this.currentSpeed += 20;
+                console.log(this.currentSpeed);
+            }
+            if (this.currentSpeed > this.maxSpeed && msgc === 0) {
+                console.log('speed is too high, SLOW DOWN!');   
+                msgc++;
+            }
             if (this.constructor.name === 'Motorcycle' && this.currentSpeed - this.maxSpeed >= tht) {
                 console.log('speed is too high, SLOW DOWN!');
                 console.log('Engine overheating');
+                this.currentSpeed += 20;
+                console.log(this.currentSpeed);
                 this.braking = true;
                 clearInterval(driveID);
                 let stopID = setInterval(() => {
@@ -58,14 +68,6 @@ Vehicle.prototype.drive = function() {
                         return;
                     }
                 }, twt);
-            }
-            if(this.driveStatus) {
-                this.currentSpeed += 20;
-                console.log(this.currentSpeed);
-            }
-            if (this.currentSpeed > this.maxSpeed && msgc === 0) {
-                console.log('speed is too high, SLOW DOWN!');   
-                msgc++;
             }
         }, twt);
     } else {
